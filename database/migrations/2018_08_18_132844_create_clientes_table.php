@@ -6,26 +6,31 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateClientesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('clientes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
-    }
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  public function up()
+  {
+    Schema::create('clientes', function (Blueprint $table) {
+      $table->increments('id_cliente');
+      $table->string('nombre');
+      $table->integer('apellido_paterno');
+      $table->integer('apellido_materno');
+      $table->string('image_url', 500);
+      $table->boolean('deleted')->default(false);
+      $table->timestamps();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('clientes');
-    }
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  public function down()
+  {
+    Schema::dropIfExists('clientes');
+  }
 }
