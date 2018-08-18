@@ -21,6 +21,8 @@ class CreateVentasTable extends Migration
       $table->date('fecha');
       $table->boolean('deleted')->default(false);
       $table->timestamps();
+      $table->foreign('id_producto')->references('id_producto')->on('productos');
+      $table->foreign('id_cliente')->references('id_cliente')->on('clientes');
     });
   }
 
