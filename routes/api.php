@@ -25,19 +25,19 @@ Route::group(['middleware' => 'auth:api'], function () {
 });
 /*Productos*/
 Route::get('/productos', 'ProductoController@getAll');
-Route::get('/productos', 'ProductoController@getById');
+//Route::get('/productos', 'ProductoController@getById');
 Route::post('/productos', 'ProductoController@create');
 Route::put('/productos', 'ProductoController@edit');
 Route::delete('/productos', 'ProductoController@delete');
 /*Clientes*/
 Route::get('/clientes', 'ClienteController@getAll');
-Route::get('/clientes', 'ClienteController@getById');
+//Route::get('/clientes', 'ClienteController@getById');
 Route::post('/clientes', 'ClienteController@create');
 Route::put('/clientes', 'ClienteController@edit');
 Route::delete('/clientes', 'ClienteController@delete');
 /*Ventas*/
 Route::get('/ventas', 'VentaController@getAll');
-Route::get('/ventas', 'VentaController@getById');
+//Route::get('/ventas', 'VentaController@getById');
 Route::post('/ventas', 'VentaController@create');
 Route::put('/ventas', 'VentaController@edit');
 Route::delete('/ventas', 'VentaController@delete');
