@@ -52,13 +52,5 @@ class ProductoSeeder extends Seeder
       'marca' => 'Kris',
       'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/mayonesa.jpg'
     ]);
-    Producto::create([
-      'nombre' => 'Arroz',
-      'precio' => 7,
-      'stock' => 25,
-      'cantidad' => 34,
-      'marca' => 'Okinawa',
-      'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/arroz.jpg'
-    ]);
   }
 }
