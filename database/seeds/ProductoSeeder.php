@@ -12,13 +12,16 @@ class ProductoSeeder extends Seeder
    */
   public function run()
   {
+    $local_path = 'http://localhost:8000';
+    $development_path = 'http://cursoangular.hosting.cs.umss.edu.bo';
+    $path = $local_path;
     Producto::create([
       'nombre' => 'Detergente',
       'precio' => 8,
       'stock' => 60,
       'cantidad' => 10,
       'marca' => 'Patito',
-      'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/detergente.jpg'
+      'image_url' => $path.'/images/producto/detergente.jpg'
     ]);
     Producto::create([
       'nombre' => 'Sardina',
@@ -26,7 +29,7 @@ class ProductoSeeder extends Seeder
       'stock' => 20,
       'cantidad' => 50,
       'marca' => 'Lidita',
-      'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/sardina.jpg'
+      'image_url' => $path.'/images/producto/sardina.jpg'
     ]);
     Producto::create([
       'nombre' => 'Fideo',
@@ -34,7 +37,7 @@ class ProductoSeeder extends Seeder
       'stock' => 22,
       'cantidad' => 55,
       'marca' => 'Famosa',
-      'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/fideo.jpg'
+      'image_url' => $path.'/images/producto/fideo.jpg'
     ]);
     Producto::create([
       'nombre' => 'Leche',
@@ -42,7 +45,7 @@ class ProductoSeeder extends Seeder
       'stock' => 15,
       'cantidad' => 20,
       'marca' => 'Pil',
-      'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/leche.jpg'
+      'image_url' => $path.'/images/producto/leche.jpg'
     ]);
     Producto::create([
       'nombre' => 'Mayonesa',
@@ -50,7 +53,7 @@ class ProductoSeeder extends Seeder
       'stock' => 13,
       'cantidad' => 63,
       'marca' => 'Kris',
-      'image_url' => 'http://cursoangular.hosting.cs.umss.edu.bo/images/producto/mayonesa.jpg'
+      'image_url' => $path.'/images/producto/mayonesa.jpg'
     ]);
   }
 }
