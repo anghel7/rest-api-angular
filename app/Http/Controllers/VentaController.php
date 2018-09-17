@@ -27,6 +27,9 @@ class VentaController extends Controller
 
   public function edit($id, Request $request)
   {
+    $venta = Venta::find($id);
+    $venta->update($request->all());
+    return response()->json($venta->load('cliente','producto'));
   }
 
   public function delete($id)

@@ -14,7 +14,7 @@ class ProductoSeeder extends Seeder
   {
     $local_path = 'http://localhost:8000';
     $development_path = 'http://cursoangular.hosting.cs.umss.edu.bo';
-    $path = $local_path;
+    $path = $development_path;
     Producto::create([
       'nombre' => 'Detergente',
       'precio' => 8,

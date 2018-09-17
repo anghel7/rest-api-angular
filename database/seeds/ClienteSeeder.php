@@ -14,7 +14,7 @@ class ClienteSeeder extends Seeder
     {
       $local_path = 'http://localhost:8000';
       $development_path = 'http://cursoangular.hosting.cs.umss.edu.bo';
-      $path = $local_path;
+      $path = $development_path;
       Cliente::create([
         'nombre' => 'Juan',
         'apellido_paterno' => 'Perez',
