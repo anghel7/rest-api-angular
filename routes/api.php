@@ -37,7 +37,7 @@ Route::put('/clientes/{id}', 'ClienteController@edit');
 Route::delete('/clientes/{id}', 'ClienteController@delete');
 /*Ventas*/
 Route::get('/ventas', 'VentaController@getAll');
-//Route::get('/ventas', 'VentaController@getById');
+Route::get('/ventas/{id}', 'VentaController@getById');
 Route::post('/ventas', 'VentaController@create');
 Route::put('/ventas', 'VentaController@edit');
 Route::delete('/ventas', 'VentaController@delete');
